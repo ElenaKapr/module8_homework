@@ -1,0 +1,133 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+  
+.slider-container {
+  width: 785px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.slider-container:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgb(220, 220, 220, 1);
+}
+
+.slider {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.slider-arrow {
+  width: 40px;
+  height: 200px;
+  background-color: rgb(220, 220, 220, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.slider-arrow:hover {
+  background-color: rgb(220, 220, 220, 1);
+}
+
+.slider-images {
+  position: relative;
+  width: 700px;
+  height: 300px;
+  margin: 0 auto;
+}
+
+.slider-images div {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.slider-image-min {
+  position: absolute;
+  top: 50px;
+  width: 125px;
+  height: 200px;
+  z-index: -1;
+}
+
+.slider-image-min.left {
+  left: 0;
+}
+
+.slider-image-min.right {
+  right: 0;
+}
+
+.slider-image-max {
+  position: absolute;
+  left: 100px;
+  top: 25px;
+  width: 500px;
+  height: 250px;
+  box-shadow: 10px 10px 5px 3px rgba(0, 0, 0, 0.3);
+}
+
+.slider-image-title {
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #fff;
+  font-size: 1em;
+  padding: 7px;
+}
+
+.slider-image-dark {
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  background-color:rgba(0,0,0,0.3);
+}
+
+.slider-image {
+  width: inherit;
+  height: inherit;
+}
+
+.slider-image.main {
+  transition: background 0.8s ease;
+}
+
+.slider-dots {
+  width: 100%;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.slider-dots-item {
+  width: 10px;
+  height: 10px;
+  background: rgb(220, 220, 220);
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background 0.4s ease;
+}
+
+.slider-dots-item:hover {
+  background: rgb(150, 150, 150);
+}
+
+.slider-dots-item.main {
+  background: #000;
+}
+
+.slider-help {
+  left: 0;
+  margin-bottom: 0;
+  color: rgb(199, 196, 196);
+  font-size: 0.8em;
+  text-align: center;
+}
